@@ -24,12 +24,7 @@ date = date + str(day)
 
 
 # Wxpush()消息推送模块
-def Wxpush(msg):
-    url = f'https://sc.ftqq.com/{sckey}.send?text={date}日{msg}'
-    for _ in range(3):
-        err = requests.get(url)
-        if not err.json()['errno']:
-            break
+
 
 
 # 指点天下登录模块
@@ -94,10 +89,9 @@ def sign_in(token):
     response = session.post(url=url, headers=header, data=data)
     if response.json()['status'] == 1:
         msg = '打卡成功'
-        Wxpush(msg)
     else:
         msg = parse.quote_plus(response.json()['msg'])
-        Wxpush(msg)
+       
 
 
 # 获取每日宿舍签到的signInId模块
@@ -148,7 +142,7 @@ def sign_in_evening(token):
     else:
         print("fail!")
     msg = parse.quote_plus(response.json()['msg'])
-    Wxpush(msg)
+    
 
 
 if __name__ == "__main__":
