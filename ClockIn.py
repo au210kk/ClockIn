@@ -80,7 +80,7 @@ def sign_in(token):
                         "goToHuiBei": "否", "contactIllPerson": "否", "haveYouEverBeenAbroad": "否",
                         "familyPeopleNum": "4", "isFamilyHealth": "否", "isFamilyColdChain": "否", "isFamilyStatus": "否",
                         "familyPeopleIsAway": "否", "hasYourFamilyEverBeenAbroad": "否", "leave": "否",
-                        "isYesterdayMove": "否", "admission": "是", "help": "", "nowLocation": district}
+                        "isYesterdayMove": "否", "admission": "是", "help": "", "nowLocation": district, "isBelongToArea": "否", "vaccination": "已完成", "vehicle": ""}
     data = {"health": 0,
             "student": 1,
             "templateId": 2,
