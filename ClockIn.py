@@ -57,7 +57,6 @@ def login():
         flag = 1
     else:
         msg = parse.quote_plus(response.json()['msg'])
-        Wxpush(msg)
         flag = 0
     return response.json()['data']
 
