@@ -47,7 +47,7 @@ def login():
         'appVersion': '1.6.4',
         'mobileVersion': 'Mate30',
         'deviceToken': deviceToken,
-        'pushToken': '0938765546475757478765800CN01',
+        'pushToken': '0938765546475757478755800CN01',
         'romInfo': 'hw'
     }
 
